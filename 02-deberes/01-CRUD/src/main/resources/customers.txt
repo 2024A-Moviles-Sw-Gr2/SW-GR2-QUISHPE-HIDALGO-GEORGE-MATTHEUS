@@ -1,0 +1,5 @@
+1;George Quishpe;george.quishpe@epn.edu.ec;11-07-2024;false
+2;Maria Garcia;maria.garcia@gmail.com;01-09-2020;true
+4;Ana Martinez;ana.martinez@gmail.com;12-12-2018;true
+5;Daniela Hernandez;daniel.hernandez@gmail.com;12-12-2018;false
+6;Martin Herrera;martin@gmail.com;12-07-2023;false

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "731279660226",
+    "project_id": "qhgm-2024a-sw-gr2",
+    "storage_bucket": "qhgm-2024a-sw-gr2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731279660226:android:d4e8e9a3fa47e31b56175b",
+        "android_client_info": {
+          "package_name": "com.example.a2024swgr2qhgm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAiLrUN3JhoYIMsFe7cSUx4Z5o5-HQaS6A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
