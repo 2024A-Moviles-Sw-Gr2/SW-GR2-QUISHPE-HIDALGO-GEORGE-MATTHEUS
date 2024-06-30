@@ -1,4 +1,4 @@
-package com.example.a2024accgr1vaes
+package com.example.a2024swgr2qhgm
 
 class BBaseDatosMemoria {
     companion object{
