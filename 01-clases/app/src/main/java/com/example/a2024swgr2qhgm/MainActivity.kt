@@ -122,6 +122,16 @@ class MainActivity : AppCompatActivity() {
             irActividad(ECrudEntrenador::class.java)
         }
 
+        val botonRView = findViewById<Button>(R.id.btn_recycler_view)
+        botonRView.setOnClickListener{
+            irActividad(FRecyclerView::class.java)
+        }
+
+        val BotonGMaps = findViewById<Button>(R.id.btn_google_maps)
+        BotonGMaps.setOnClickListener{
+            irActividad(GoogleMapsInicio::class.java)
+        }
+
     }
 
     fun irActividad(
