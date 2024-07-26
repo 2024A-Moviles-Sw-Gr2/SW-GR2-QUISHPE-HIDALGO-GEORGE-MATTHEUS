@@ -87,7 +87,7 @@ class SqliteHelper (
         return if(arregloRespuesta.size>0) arregloRespuesta else null
     }
 
-    fun consultarClientePorID(id:Int): Cliente? {
+        fun consultarClientePorID(id:Int): Cliente? {
         val conexionEscritura = readableDatabase
 
         val scriptConsultaLectura =
@@ -192,43 +192,6 @@ class SqliteHelper (
     }
 
     // Funciones para la tabla Pedido
-    fun consultarPedidos(): ArrayList<Pedido>? {
-        val conexionEscritura = readableDatabase
-
-        val scriptConsultaLectura =
-            """
-                SELECT * FROM Pedido
-            """.trimIndent()
-
-        val resultadoConsultaLectura = conexionEscritura
-            .rawQuery(
-                scriptConsultaLectura,
-                null
-            )
-
-        val existeAlMenosUno = resultadoConsultaLectura
-            .moveToFirst()
-        val arregloRespuesta = arrayListOf<Pedido>()
-        if(existeAlMenosUno){
-            do{
-                val pedido = Pedido(
-                    resultadoConsultaLectura.getInt(0),
-                    resultadoConsultaLectura.getInt(1),
-                    resultadoConsultaLectura.getString(2),
-                    resultadoConsultaLectura.getDouble(3),
-                    resultadoConsultaLectura.getString(4),
-                    resultadoConsultaLectura.getString(5)
-                )
-                arregloRespuesta.add(pedido)
-            }while(resultadoConsultaLectura.moveToNext())
-        }
-
-        resultadoConsultaLectura.close()
-        conexionEscritura.close()
-
-        return if(arregloRespuesta.size>0) arregloRespuesta else null
-    }
-
     fun consultarPedidosPorCliente(clienteID:Int): ArrayList<Pedido>? {
         val conexionEscritura = readableDatabase
 

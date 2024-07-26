@@ -37,7 +37,7 @@ class MainActivity : AppCompatActivity() {
             irActividad(FormCrearCliente::class.java)
         }
 
-        // Registrar para menú contextual
+        // Registrar lista para menú contextual
         val listaCliente = findViewById<ListView>(R.id.lv_cliente)
         registerForContextMenu(listaCliente)
     }
