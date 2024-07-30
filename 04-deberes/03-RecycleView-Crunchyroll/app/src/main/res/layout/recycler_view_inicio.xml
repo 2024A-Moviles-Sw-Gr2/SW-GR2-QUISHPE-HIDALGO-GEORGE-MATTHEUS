@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="380dp"
+    android:layout_height="518dp">
+
+    <ImageView
+        android:id="@+id/iv_inicio_portada"
+        android:layout_width="380dp"
+        android:layout_height="518dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:foregroundTint="#00FFFFFF"
+        app:cardBackgroundColor="#00FFFFFF"
+        app:cardCornerRadius="0dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:guidelineUseRtl="false"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_inicio_portada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/gradient"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_inicio_idioma"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="3sp"
+                android:text="TextView"
+                android:textColor="#AFAFAF"
+                android:textSize="10sp" />
+
+            <TextView
+                android:id="@+id/tv_inicio_descripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="3sp"
+                android:text="TextView"
+                android:textColor="#FFFFFF"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20sp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_inicio_reproducir"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:backgroundTint="#F37521"
+                    android:paddingLeft="45dp"
+                    android:paddingRight="45dp"
+                    android:text="COMENZAR A VER E1"
+                    android:textColor="#000000"
+                    app:cornerRadius="0sp"
+                    app:icon="@drawable/ic_play"
+                    app:iconPadding="0dp"
+                    app:iconTint="#000000" />
+
+                <ImageButton
+                    android:id="@+id/ib_inicio_favoritos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/border"
+                    android:backgroundTint="#00FFFFFF"
+                    android:contentDescription="Añadir a favoritos"
+                    app:srcCompat="@drawable/ic_bookmark"
+                    app:tint="#F37521" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
