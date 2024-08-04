@@ -1,4 +1,4 @@
-package com.example.a03_recycleview_crunchyroll
+package com.example.a03_recycleview_crunchyroll.views
 
 import android.view.LayoutInflater
 import android.view.View
@@ -6,6 +6,8 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.a03_recycleview_crunchyroll.MainActivity
+import com.example.a03_recycleview_crunchyroll.R
 import com.example.a03_recycleview_crunchyroll.entities.Inicio
 
 class RecyclerViewAdaptadorInicio (

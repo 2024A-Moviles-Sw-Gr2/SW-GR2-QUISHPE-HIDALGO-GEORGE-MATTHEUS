@@ -9,20 +9,22 @@
 
     <TextView
         android:id="@+id/tv_recomendacion_titulo"
-        android:layout_width="125dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="5dp"
         android:text="TextView"
         android:textColor="#FFFFFF"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@+id/iv_recomendacion_portada"
         app:layout_constraintStart_toStartOf="@+id/iv_recomendacion_portada"
         app:layout_constraintTop_toBottomOf="@+id/iv_recomendacion_portada" />
 
     <ImageView
         android:id="@+id/iv_recomendacion_portada"
-        android:layout_width="125dp"
-        android:layout_height="175dp"
-        android:layout_margin="5dp"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="3.5dp"
+        android:layout_marginVertical="5dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -35,10 +37,11 @@
         android:layout_height="wrap_content"
         android:text="TextView"
         android:textColor="#AFAFAF"
-        android:textSize="10sp"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="@+id/ib_recomendacion_opciones"
         app:layout_constraintStart_toStartOf="@+id/tv_recomendacion_titulo"
-        app:layout_constraintTop_toTopOf="@+id/ib_recomendacion_opciones" />
+        app:layout_constraintTop_toTopOf="@+id/ib_recomendacion_opciones"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageButton
         android:id="@+id/ib_recomendacion_opciones"
@@ -46,9 +49,9 @@
         android:layout_height="wrap_content"
         android:background="#00FFFFFF"
         android:contentDescription="Opciones de recomendación"
-        android:tint="#AFAFAF"
         app:layout_constraintEnd_toEndOf="@+id/tv_recomendacion_titulo"
         app:layout_constraintTop_toBottomOf="@+id/tv_recomendacion_titulo"
-        app:srcCompat="@drawable/ic_puntos_verticales" />
+        app:srcCompat="@drawable/ic_puntos_verticales"
+        app:tint="#AFAFAF" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

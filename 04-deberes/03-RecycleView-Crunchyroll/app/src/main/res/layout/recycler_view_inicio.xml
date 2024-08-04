@@ -41,36 +41,44 @@
                 android:id="@+id/tv_inicio_idioma"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="3sp"
                 android:text="TextView"
-                android:textColor="#AFAFAF"
-                android:textSize="10sp" />
+                android:textColor="#C3C3C3"
+                android:textSize="12dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/tv_inicio_descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginHorizontal="10dp"
                 android:layout_marginVertical="3sp"
                 android:text="TextView"
                 android:textColor="#FFFFFF"
-                android:textSize="13sp" />
+                android:textSize="13dp"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginVertical="20sp"
+                android:layout_marginVertical="5sp"
                 android:orientation="horizontal">
 
                 <Button
                     android:id="@+id/btn_inicio_reproducir"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
                     android:layout_weight="1"
                     android:backgroundTint="#F37521"
-                    android:paddingLeft="45dp"
-                    android:paddingRight="45dp"
-                    android:text="COMENZAR A VER E1"
+                    android:includeFontPadding="false"
+                    android:paddingLeft="40dp"
+                    android:paddingRight="40dp"
+                    android:text="COMENZAR A VER T1 E1"
                     android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
                     app:cornerRadius="0sp"
                     app:icon="@drawable/ic_play"
                     app:iconPadding="0dp"
@@ -80,11 +88,10 @@
                     android:id="@+id/ib_inicio_favoritos"
                     android:layout_width="wrap_content"
                     android:layout_height="48dp"
-                    android:layout_marginHorizontal="8dp"
                     android:layout_weight="1"
-                    android:background="@drawable/border"
-                    android:backgroundTint="#00FFFFFF"
+                    android:background="@drawable/gradient"
                     android:contentDescription="Añadir a favoritos"
+                    android:padding="5dp"
                     app:srcCompat="@drawable/ic_bookmark"
                     app:tint="#F37521" />
 

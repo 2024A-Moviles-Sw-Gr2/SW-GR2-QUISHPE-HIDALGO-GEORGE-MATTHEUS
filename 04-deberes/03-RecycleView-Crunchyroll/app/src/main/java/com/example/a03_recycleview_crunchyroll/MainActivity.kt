@@ -7,6 +7,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.a03_recycleview_crunchyroll.utils.BaseDatosMemoria
+import com.example.a03_recycleview_crunchyroll.views.RecyclerViewAdaptadorInicio
+import com.example.a03_recycleview_crunchyroll.views.RecyclerViewAdaptadorRecomendacion
+import com.example.a03_recycleview_crunchyroll.views.RecyclerViewSeguirViendo
 
 class MainActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
@@ -21,23 +24,25 @@ class MainActivity : AppCompatActivity() {
     fun inicializarRecyclerView(){
         val rvRecomendaciones = findViewById<RecyclerView>(R.id.rv_recomendaciones)
         val rvInicio = findViewById<RecyclerView>(R.id.rv_inicio)
+        val rvSeguirViendo = findViewById<RecyclerView>(R.id.rv_seguir_viendo)
 
-        val adaptadorRecomendaciones = RecyclerViewAdaptadorRecomendaciones(
-            this,
-            BaseDatosMemoria.listaRecomendaciones,
-            rvRecomendaciones
-        )
         val adaptadorInicio = RecyclerViewAdaptadorInicio(
             this,
             BaseDatosMemoria.inicio,
             rvInicio
         )
-        rvRecomendaciones.layoutManager = LinearLayoutManager(
+
+        val adaptadorRecomendaciones = RecyclerViewAdaptadorRecomendacion(
             this,
-            LinearLayoutManager.HORIZONTAL,
-            false)
-        rvRecomendaciones.adapter = adaptadorRecomendaciones
-        adaptadorRecomendaciones.notifyDataSetChanged()
+            BaseDatosMemoria.listaRecomendaciones,
+            rvRecomendaciones
+        )
+
+        val adaptadorSeguirViendo = RecyclerViewSeguirViendo(
+            this,
+            BaseDatosMemoria.listaSeguirViendo,
+            rvSeguirViendo
+        )
 
         rvInicio.layoutManager = LinearLayoutManager(
             this,
@@ -45,5 +50,20 @@ class MainActivity : AppCompatActivity() {
             false)
         rvInicio.adapter = adaptadorInicio
         adaptadorInicio.notifyDataSetChanged()
+
+        rvRecomendaciones.layoutManager = LinearLayoutManager(
+            this,
+            LinearLayoutManager.HORIZONTAL,
+            false)
+        rvRecomendaciones.adapter = adaptadorRecomendaciones
+        adaptadorRecomendaciones.notifyDataSetChanged()
+
+        rvSeguirViendo.layoutManager = LinearLayoutManager(
+            this,
+            LinearLayoutManager.HORIZONTAL,
+            false)
+        rvSeguirViendo.adapter = adaptadorSeguirViendo
+        adaptadorSeguirViendo.notifyDataSetChanged()
+
     }
 }

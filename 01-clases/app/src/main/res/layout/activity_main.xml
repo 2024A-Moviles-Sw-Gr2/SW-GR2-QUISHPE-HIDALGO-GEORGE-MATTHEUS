@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.318" />
+        app:layout_constraintVertical_bias="0.188" />
 
     <Button
         android:id="@+id/btn_ciclo_vida"
@@ -93,5 +93,15 @@
         app:layout_constraintEnd_toEndOf="@+id/btn_recycler_view"
         app:layout_constraintStart_toStartOf="@+id/btn_recycler_view"
         app:layout_constraintTop_toBottomOf="@+id/btn_recycler_view" />
+
+    <Button
+        android:id="@+id/btn_intent_firebase_ui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="F. Auth"
+        app:layout_constraintEnd_toEndOf="@+id/btn_google_maps"
+        app:layout_constraintStart_toStartOf="@+id/btn_google_maps"
+        app:layout_constraintTop_toBottomOf="@+id/btn_google_maps" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

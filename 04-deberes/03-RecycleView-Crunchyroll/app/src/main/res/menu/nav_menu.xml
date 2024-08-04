@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mi_inicio"
+        android:title="Inicio"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_inicio"/>
+    <item
+        android:id="@+id/mi_mis_listas"
+        android:icon="@drawable/ic_mis_listas"
+        app:showAsAction="ifRoom"
+        android:title="Mis Listas"/>
+    <item
+        android:id="@+id/mi_explorar"
+        android:title="Explorar"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_explorar"/>
+    <item
+        android:id="@+id/mi_simulcast"
+        android:title="Simulcast"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/ic_simulcast"/>
+    <item
+        android:id="@+id/mi_cuenta"
+        android:icon="@drawable/ic_user_circle"
+        android:iconTint="#00FFFFFF"
+        android:title="Cuenta"
+        app:showAsAction="ifRoom" />
+</menu>
