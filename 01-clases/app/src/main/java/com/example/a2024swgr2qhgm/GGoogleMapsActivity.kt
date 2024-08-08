@@ -2,6 +2,7 @@ package com.example.a2024swgr2qhgm
 
 import android.content.pm.PackageManager
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
@@ -22,6 +23,14 @@ class GGoogleMapsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_ggoogle_maps)
+        solicitarPermisos()
+        iniciarLogicaMapa()
+        val botonCarolina = findViewById<Button>(R.id.btn_ir_carolina)
+        botonCarolina.setOnClickListener {
+            val carolina = LatLng(-0.18221288005854652, -78.48553955554578)
+            val zoom = 17f
+            moverCamaraConZoom(carolina, zoom)
+        }
     }
 
     fun solicitarPermisos() {
@@ -72,6 +81,7 @@ class GGoogleMapsActivity : AppCompatActivity() {
                 moverQuincentro()
                 anadirPolilinea()
                 anadirPoligono()
+                escucharListeners()
             }
         }
     }
@@ -120,6 +130,27 @@ class GGoogleMapsActivity : AppCompatActivity() {
         }
     }
 
+    fun  escucharListeners(){
+        mapa.setOnPolygonClickListener {
+            mostrarSnackbar("setOnPolygonClickListener $it.tag")
+        }
+        mapa.setOnPolylineClickListener {
+            mostrarSnackbar("setOnPolylineClickListener $it.tag")
+        }
+        mapa.setOnMarkerClickListener {
+            mostrarSnackbar("setOnMarkerClickListener $it.tag")
+            return@setOnMarkerClickListener true
+        }
+        mapa.setOnCameraMoveListener {
+            mostrarSnackbar("setOnCameraMoveListener")
+        }
+        mapa.setOnCameraMoveStartedListener {
+            mostrarSnackbar("setOnCameraMoveStartedListener")
+        }
+        mapa.setOnCameraIdleListener {
+            mostrarSnackbar("setOnCameraIdleListener")
+        }
+    }
 
     fun moverCamaraConZoom(latLang: LatLng, zoom: Float = 10f) {
         mapa.moveCamera(
