@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">02-SQLite-Maps</string>
+    <string name="title_activity_google_maps_inicio">GoogleMapsInicio</string>
+    <string name="title_activity_fragment_ver_ubi_pedido">FragmentVerUbiPedido</string>
+    <string name="title_activity_fragment_agregar_ubi_pedido">FragmentAgregarUbiPedido</string>
+
+</resources>

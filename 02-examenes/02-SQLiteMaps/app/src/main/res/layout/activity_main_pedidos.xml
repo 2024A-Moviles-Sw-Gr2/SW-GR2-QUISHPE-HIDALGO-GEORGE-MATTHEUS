@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MainPedidos">
+
+    <ListView
+        android:id="@+id/lv_pedido"
+        android:layout_width="408dp"
+        android:layout_height="570dp"
+        android:layout_marginTop="55dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nombre_cl_pedidos"
+        tools:listitem="@android:layout/activity_list_item" />
+
+    <TextView
+        android:id="@+id/tv_nombre_cl_pedidos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="Nombre Cliente"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="@+id/btn_regresar_clientes"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/btn_crear_pedido"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/roundstyle"
+        android:backgroundTint="#3F51B5"
+        android:contentDescription="Crear Pedido"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_nombre_cl_pedidos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv_nombre_cl_pedidos"
+        app:layout_constraintVertical_bias="0.571"
+        app:srcCompat="@drawable/ic_plus"
+        app:tint="#FFFFFF" />
+
+    <ImageButton
+        android:id="@+id/btn_regresar_clientes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#00FFFFFF"
+        android:tint="#3F51B4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_return" />
+</androidx.constraintlayout.widget.ConstraintLayout>

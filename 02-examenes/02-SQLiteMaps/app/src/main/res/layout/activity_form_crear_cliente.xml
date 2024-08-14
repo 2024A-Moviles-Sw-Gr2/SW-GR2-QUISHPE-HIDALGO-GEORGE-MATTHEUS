@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.FormCrearPedido">
+
+    <CheckBox
+        android:id="@+id/cb_crearC_activo"
+        android:layout_width="141dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:text="Activo"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/input_crearC_fechaRegistro"
+        app:layout_constraintTop_toBottomOf="@+id/input_crearC_fechaRegistro" />
+
+    <EditText
+        android:id="@+id/input_crearC_email"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/input_crearC_nombre"
+        app:layout_constraintStart_toStartOf="@+id/input_crearC_nombre"
+        app:layout_constraintTop_toBottomOf="@+id/input_crearC_nombre" />
+
+    <Button
+        android:id="@+id/btn_guardar_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="Guardar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_crearC_activo" />
+
+    <EditText
+        android:id="@+id/input_crearC_fechaRegistro"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:hint="Fecha de registro"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="@+id/input_crearC_email"
+        app:layout_constraintStart_toStartOf="@+id/input_crearC_email"
+        app:layout_constraintTop_toBottomOf="@+id/input_crearC_email" />
+
+    <EditText
+        android:id="@+id/input_crearC_nombre"
+        android:layout_width="325dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:fontFamily="@font/montserrat_alternates_medium"
+        android:hint="Nombre"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tv_crear_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/tv_crear_cliente" />
+
+    <TextView
+        android:id="@+id/tv_crear_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="68dp"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="CREAR CLIENTE"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_cancel_crear_cliente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#3F51B5"
+        android:fontFamily="@font/montserrat_alternates_semibold"
+        android:text="Cancelar"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_guardar_cliente"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="@+id/btn_guardar_cliente"
+        app:layout_constraintTop_toBottomOf="@+id/btn_guardar_cliente" />
+</androidx.constraintlayout.widget.ConstraintLayout>
