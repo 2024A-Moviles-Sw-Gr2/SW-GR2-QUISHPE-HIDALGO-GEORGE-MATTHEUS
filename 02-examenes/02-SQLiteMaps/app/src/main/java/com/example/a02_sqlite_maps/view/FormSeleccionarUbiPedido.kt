@@ -73,6 +73,8 @@ class FormSeleccionarUbiPedido : AppCompatActivity() {
                 intentCrearP.putExtra("montoPedido", intent.getStringExtra("montoPedido"))
                 intentCrearP.putExtra("descripcionPedido", intent.getStringExtra("descripcionPedido"))
                 intentCrearP.putExtra("pagadoPedido", intent.getStringExtra("pagadoPedido"))
+                intentCrearP.putExtra("latitudPedido", intent.getStringExtra("latitudPedido"))
+                intentCrearP.putExtra("longitudPedido", intent.getStringExtra("longitudPedido"))
                 startActivity(intentCrearP)
             } else {
                 val intentActualizarP = Intent(this, FormActualizarPedido::class.java)
@@ -84,6 +86,8 @@ class FormSeleccionarUbiPedido : AppCompatActivity() {
                 intentActualizarP.putExtra("montoPedido", intent.getStringExtra("montoPedido"))
                 intentActualizarP.putExtra("descripcionPedido", intent.getStringExtra("descripcionPedido"))
                 intentActualizarP.putExtra("pagadoPedido", intent.getStringExtra("pagadoPedido"))
+                intentActualizarP.putExtra("latitudPedido", intent.getStringExtra("latitudPedido"))
+                intentActualizarP.putExtra("longitudPedido", intent.getStringExtra("longitudPedido"))
                 startActivity(intentActualizarP)
             }
         }
@@ -100,6 +104,8 @@ class FormSeleccionarUbiPedido : AppCompatActivity() {
                 intentCrearP.putExtra("montoPedido", intent.getStringExtra("montoPedido"))
                 intentCrearP.putExtra("descripcionPedido", intent.getStringExtra("descripcionPedido"))
                 intentCrearP.putExtra("pagadoPedido", intent.getStringExtra("pagadoPedido"))
+                intentCrearP.putExtra("latitudPedido", intent.getStringExtra("latitudPedido"))
+                intentCrearP.putExtra("longitudPedido", intent.getStringExtra("longitudPedido"))
                 startActivity(intentCrearP)
             } else {
                 val intentActualizarP = Intent(this, FormActualizarPedido::class.java)
@@ -111,6 +117,8 @@ class FormSeleccionarUbiPedido : AppCompatActivity() {
                 intentActualizarP.putExtra("montoPedido", intent.getStringExtra("montoPedido"))
                 intentActualizarP.putExtra("descripcionPedido", intent.getStringExtra("descripcionPedido"))
                 intentActualizarP.putExtra("pagadoPedido", intent.getStringExtra("pagadoPedido"))
+                intentActualizarP.putExtra("latitudPedido", intent.getStringExtra("latitudPedido"))
+                intentActualizarP.putExtra("longitudPedido", intent.getStringExtra("longitudPedido"))
                 startActivity(intentActualizarP)
             }
         }

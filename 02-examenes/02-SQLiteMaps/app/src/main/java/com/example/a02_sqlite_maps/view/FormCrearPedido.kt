@@ -91,6 +91,8 @@ class FormCrearPedido : AppCompatActivity() {
             intentAgregarUbicacionPedido.putExtra("fechaPedido", fechaPed.text.toString())
             intentAgregarUbicacionPedido.putExtra("montoPedido", montoPed.text.toString())
             intentAgregarUbicacionPedido.putExtra("descripcionPedido", descPed.text.toString())
+            intentAgregarUbicacionPedido.putExtra("latitudPedido", latitudPedido.text.toString())
+            intentAgregarUbicacionPedido.putExtra("longitudPedido", longitudPedido.text.toString())
             intentAgregarUbicacionPedido.putExtra("pagadoPedido", if (cbPagado.isChecked) "Si" else "No")
             startActivity(intentAgregarUbicacionPedido)
         }
